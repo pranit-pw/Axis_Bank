@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Axis_Bank_Suite" thread-count="2" parallel="tests">
+	
+  <test  name="ChromeTest" thread-count="3" parallel="classes">
+	<parameter name="browser" value="Chrome"/>
+    <classes>
+	  <class name="Home_Page.VerifyExploreProductTab"/>
+      <class name="Explore_Products_Tab.VerifyAccountsOption"/>      
+      <class name="Explore_Products_Tab.VerifyDepositsOption"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+  
+  <test name="FirefoxTest" thread-count="3" parallel="classes">
+	<parameter name="browser" value="Firefox"/>
+    <classes>
+	  <class name="Home_Page.VerifyExploreProductTab"/>
+      <class name="Explore_Products_Tab.VerifyAccountsOption"/>      
+      <class name="Explore_Products_Tab.VerifyDepositsOption"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+
+</suite> <!-- Axis_Bank_Suite -->
