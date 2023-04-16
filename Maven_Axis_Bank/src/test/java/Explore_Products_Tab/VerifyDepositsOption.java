@@ -1,8 +1,11 @@
 package Explore_Products_Tab;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -16,6 +19,7 @@ import org.testng.asserts.SoftAssert;
 import Browser_Setup.Base;
 import Log_In_Function.LogInTab;
 import Personal_Tabs.ExploreProductTab;
+import Utils.Utility;
 
 public class VerifyDepositsOption extends Base {
 	
@@ -25,6 +29,7 @@ public class VerifyDepositsOption extends Base {
 	AccountsOption accountOption;
 	DepositsOption depositsOption;
 	SoftAssert soft;
+	String testId ;
 	
 	
 	@Parameters ("browser")
@@ -72,6 +77,7 @@ public class VerifyDepositsOption extends Base {
 	
 	@Test (priority = 1)
 	public void verifyAllTheOptionPresentInDepositsOption() {
+		testId = "Test201";
 		System.out.println("VerifyDepositsOption.Test 1");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToDeposits();
@@ -108,6 +114,7 @@ public class VerifyDepositsOption extends Base {
 	
 	@Test (priority = 2)
 	public void verifyTheDigitalFixedDepositOptionPresentInDepositsOption() {
+		testId = "Test202";
 		System.out.println("VerifyDepositsOption.Test 2");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToDeposits();
@@ -124,6 +131,7 @@ public class VerifyDepositsOption extends Base {
 	
 	@Test (priority = 3)
 	public void verifyTheFixedDepositsOptionPresentInDepositsOption() {
+		testId = "Test203";
 		System.out.println("VerifyDepositsOption.Test 3");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToDeposits();
@@ -139,6 +147,7 @@ public class VerifyDepositsOption extends Base {
 	
 	@Test (priority = 4)
 	public void verifyTheRecurringDepositsOptionPresentInDepositsOption() {
+		testId = "Test204";
 		System.out.println("VerifyDepositsOption.Test 4");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToDeposits();
@@ -154,6 +163,7 @@ public class VerifyDepositsOption extends Base {
 	
 	@Test (priority = 5)
 	public void verifyTheTaxSaverFixedDepositOptionPresentInDepositsOption() {
+		testId = "Test205";
 		System.out.println("VerifyDepositsOption.Test 5");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToDeposits();
@@ -169,6 +179,7 @@ public class VerifyDepositsOption extends Base {
 	
 	@Test (priority = 6)
 	public void verifyTheFixedDepositPlusOptionPresentInDepositsOption() {
+		testId = "Test206";
 		System.out.println("VerifyDepositsOption.Test 6");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToDeposits();
@@ -184,6 +195,7 @@ public class VerifyDepositsOption extends Base {
 	
 	@Test (priority = 7)
 	public void verifyTheAutoFixedDepositOptionPresentInDepositsOption() {
+		testId = "Test207";
 		System.out.println("VerifyDepositsOption.Test 7");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToDeposits();
@@ -198,8 +210,13 @@ public class VerifyDepositsOption extends Base {
 	}
 	
 	@AfterMethod
-	public void logOutFromApplication() {
+	public void logOutFromApplication(ITestResult result ) throws IOException, InterruptedException {
 		System.out.println("After Method");
+		
+		if(ITestResult.FAILURE == result.getStatus())
+		{
+			Utility.captureScreen(driver, testId);
+		}
 	}
 	
 	@AfterClass

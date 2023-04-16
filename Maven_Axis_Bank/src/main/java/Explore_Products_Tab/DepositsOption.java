@@ -29,11 +29,13 @@ public class DepositsOption {
 	
 	private WebDriver driver;
 	
+	
 	//Variable Initialization
 	public DepositsOption(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
+	    
 	
 	
 	//Variable Use

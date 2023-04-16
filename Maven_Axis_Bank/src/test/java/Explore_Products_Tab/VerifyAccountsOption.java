@@ -1,8 +1,11 @@
 package Explore_Products_Tab;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -16,6 +19,7 @@ import org.testng.asserts.SoftAssert;
 import Browser_Setup.Base;
 import Log_In_Function.LogInTab;
 import Personal_Tabs.ExploreProductTab;
+import Utils.Utility;
 
 public class VerifyAccountsOption extends Base {
 	
@@ -24,12 +28,14 @@ public class VerifyAccountsOption extends Base {
 	AccountsOption accountOption;
 	ExploreProductTab exploreProductTab;
 	SoftAssert soft;
+	String testId;
 	
 	
 	@Parameters ("browser")
 	@BeforeTest
 	public void openBrowser(String browserName ) {
     	System.out.println("VerifyAccountsOption.Before Test");
+    	
     	if(browserName.equals("Chrome"))
     	{
     		driver = openChromeBrowser();
@@ -69,6 +75,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 1)
 	public void verifyAllTheOptionsPresentInAccountsOption() {
+		testId = "Test101";
 		System.out.println("VerifyAccountsOption.Test 1");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -128,6 +135,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 2)
 	public void verifyTheSavingAccountOptionPresentInAccountsOption() {
+		testId = "Test102";
 		System.out.println("VerifyAccountsOption.Test 2");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -142,6 +150,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 3)
 	public void verifyTheSilverLiningsProgramOptionPresentInAccountsOption() {
+		testId = "Test103";
 		System.out.println("VerifyAccountsOption.Test 3");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -157,6 +166,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 4)
 	public void verifyTheSalaryAccountOptionPresentInAccountsOption() {
+		testId = "Test104";
 		System.out.println("VerifyAccountsOption.Test 4");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -172,6 +182,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 5)
 	public void verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption() {
+		testId = "Test105";
 		System.out.println("VerifyAccountsOption.Test 5");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -187,6 +198,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 11)
 	public void verifyTheCurrentAccountOptionPresentInAccountsOption() {
+		testId = "Test106";
 		System.out.println("VerifyAccountsOption.Test 6");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -204,6 +216,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 7)
 	public void verifyThePublicProvidentFundOptionPresentInAccountsOption() {
+		testId = "Test107";
 		System.out.println("VerifyAccountsOption.Test 7");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -219,6 +232,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 12)
 	public void verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption() {
+		testId = "Test108";
 		System.out.println("VerifyAccountsOption.Test 8");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -239,6 +253,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 9)
 	public void verifyTheSafeDepositLockerOptionPresentInAccountsOption() {
+		testId = "Test109";
 		System.out.println("VerifyAccountsOption.Test 9");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -254,6 +269,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 10)
 	public void verifyTheSafeCustodyOptionPresentInAccountsOption() {
+		testId = "Test110";
 		System.out.println("VerifyAccountsOption.Test 10");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -269,6 +285,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test(priority = 6)
 	public void verifyThePensionDisbursementAccountOptionPresentInAccountsOption() {
+		testId = "Test111";
 		System.out.println("VerifyAccountsOption.Test 11");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -284,6 +301,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 13)
 	public void verifyTheAxisActiveOptionPresentInAccountsOption() {
+		testId = "Test112";
 		System.out.println("VerifyAccountsOption.Test 12");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -301,6 +319,7 @@ public class VerifyAccountsOption extends Base {
 	
 	@Test (priority = 8)
 	public void verifyThePMJDYOptionPresentInAccountsOption() {
+		testId = "Test113";
 		System.out.println("VerifyAccountsOption.Test 13");
 		exploreProductTab.goToExploreProductTab();
 		exploreProductTab.moveToAccounts();
@@ -315,8 +334,13 @@ public class VerifyAccountsOption extends Base {
 	
 	
 	@AfterMethod
-	public void logOutFromApplication() {
+	public void logOutFromApplication(ITestResult result) throws WebDriverException, IOException, InterruptedException {
 		System.out.println("VerifyAccountsOption.After Method");
+		
+		if(ITestResult.FAILURE == result.getStatus())
+		{
+			Utility.captureScreen(driver, testId);
+		}
 	}
 	
 	

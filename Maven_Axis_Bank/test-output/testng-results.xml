@@ -1,1180 +1,648 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="44" passed="29" failed="15" skipped="0">
+<testng-results ignored="0" total="9" passed="4" failed="2" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-29T09:19:00 IST" name="Axis_Bank_Suite" finished-at="2023-03-29T09:34:58 IST" duration-ms="957827">
+  <suite started-at="2023-04-16T10:52:02 IST" name="Axis_Bank_Suite" finished-at="2023-04-16T10:52:32 IST" duration-ms="30118">
     <groups>
     </groups>
-    <test started-at="2023-03-29T09:19:00 IST" name="FirefoxTest" finished-at="2023-03-29T09:23:55 IST" duration-ms="294634">
-      <class name="Explore_Products_Tab.VerifyAccountsOption">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:19:00 IST" name="openBrowser" finished-at="2023-03-29T09:19:13 IST" duration-ms="12774" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-04-16T10:52:02 IST" name="EdgeTest" finished-at="2023-04-16T10:52:07 IST" duration-ms="5394">
+      <class name="Home_Page.VerifyLoginTab">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyLoginTab@729d991e]" started-at="2023-04-16T10:52:07 IST" name="openBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527325" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:19:31 IST" name="createPomObject" finished-at="2023-03-29T09:19:31 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyLoginTab@729d991e]" started-at="2023-04-16T10:52:07 IST" name="createPomObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527343" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPomObject -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:19:31 IST" name="launchWebApplication" finished-at="2023-03-29T09:20:08 IST" duration-ms="36854" status="PASS">
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyLoginTab@729d991e]" started-at="2023-04-16T10:52:07 IST" name="launchWebApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527346" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyAllTheOptionsPresentInAccountsOption()[pri:1, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:08 IST" name="verifyAllTheOptionsPresentInAccountsOption" finished-at="2023-03-29T09:20:11 IST" duration-ms="2309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllTheOptionsPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:11 IST" name="logOutFromApplication" finished-at="2023-03-29T09:20:11 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:11 IST" name="launchWebApplication" finished-at="2023-03-29T09:20:16 IST" duration-ms="5468" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheSavingAccountOptionPresentInAccountsOption()[pri:2, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:16 IST" name="verifyTheSavingAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:20:25 IST" duration-ms="8532" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyAllTheOptionsPresentInLoginTab()[pri:0, instance:Home_Page.VerifyLoginTab@729d991e]" started-at="2023-04-16T10:52:07 IST" name="verifyAllTheOptionsPresentInLoginTab" finished-at="2023-04-16T10:52:07 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheSavingAccountOptionPresentInAccountsOption(VerifyAccountsOption.java:140)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSavingAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:25 IST" name="launchWebApplication" finished-at="2023-03-29T09:20:45 IST" duration-ms="20415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:25 IST" name="logOutFromApplication" finished-at="2023-03-29T09:20:25 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyTheSilverLiningsProgramOptionPresentInAccountsOption()[pri:3, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:45 IST" name="verifyTheSilverLiningsProgramOptionPresentInAccountsOption" finished-at="2023-03-29T09:20:51 IST" duration-ms="5649" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheSilverLiningsProgramOptionPresentInAccountsOption(VerifyAccountsOption.java:154)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSilverLiningsProgramOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:51 IST" name="logOutFromApplication" finished-at="2023-03-29T09:20:51 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:51 IST" name="launchWebApplication" finished-at="2023-03-29T09:20:56 IST" duration-ms="5455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheSalaryAccountOptionPresentInAccountsOption()[pri:4, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:20:56 IST" name="verifyTheSalaryAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:21:04 IST" duration-ms="8041" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheSalaryAccountOptionPresentInAccountsOption(VerifyAccountsOption.java:169)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSalaryAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:04 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:04 IST" name="launchWebApplication" finished-at="2023-03-29T09:21:10 IST" duration-ms="5571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption()[pri:5, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:10 IST" name="verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:21:16 IST" duration-ms="6550" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption(VerifyAccountsOption.java:184)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:16 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:16 IST" name="launchWebApplication" finished-at="2023-03-29T09:21:23 IST" duration-ms="6882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyThePensionDisbursementAccountOptionPresentInAccountsOption()[pri:6, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:23 IST" name="verifyThePensionDisbursementAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:21:31 IST" duration-ms="8156" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyThePensionDisbursementAccountOptionPresentInAccountsOption(VerifyAccountsOption.java:281)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThePensionDisbursementAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:31 IST" name="launchWebApplication" finished-at="2023-03-29T09:21:37 IST" duration-ms="5756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:31 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:31 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyThePublicProvidentFundOptionPresentInAccountsOption()[pri:7, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:37 IST" name="verifyThePublicProvidentFundOptionPresentInAccountsOption" finished-at="2023-03-29T09:21:44 IST" duration-ms="6637" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyThePublicProvidentFundOptionPresentInAccountsOption(VerifyAccountsOption.java:216)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThePublicProvidentFundOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:44 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:44 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:21:44 IST" name="launchWebApplication" finished-at="2023-03-29T09:22:01 IST" duration-ms="17684" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyThePMJDYOptionPresentInAccountsOption()[pri:8, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:01 IST" name="verifyThePMJDYOptionPresentInAccountsOption" finished-at="2023-03-29T09:22:05 IST" duration-ms="4149" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyThePMJDYOptionPresentInAccountsOption(VerifyAccountsOption.java:313)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThePMJDYOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:05 IST" name="launchWebApplication" finished-at="2023-03-29T09:22:23 IST" duration-ms="17972" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:05 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:05 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyTheSafeDepositLockerOptionPresentInAccountsOption()[pri:9, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:23 IST" name="verifyTheSafeDepositLockerOptionPresentInAccountsOption" finished-at="2023-03-29T09:22:29 IST" duration-ms="5296" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheSafeDepositLockerOptionPresentInAccountsOption(VerifyAccountsOption.java:251)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSafeDepositLockerOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:29 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:29 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:29 IST" name="launchWebApplication" finished-at="2023-03-29T09:22:44 IST" duration-ms="15692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheSafeCustodyOptionPresentInAccountsOption()[pri:10, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:44 IST" name="verifyTheSafeCustodyOptionPresentInAccountsOption" finished-at="2023-03-29T09:22:50 IST" duration-ms="5898" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheSafeCustodyOptionPresentInAccountsOption(VerifyAccountsOption.java:266)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSafeCustodyOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:50 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:50 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:22:50 IST" name="launchWebApplication" finished-at="2023-03-29T09:23:05 IST" duration-ms="14437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheCurrentAccountOptionPresentInAccountsOption()[pri:11, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:05 IST" name="verifyTheCurrentAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:23:11 IST" duration-ms="5740" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheCurrentAccountOptionPresentInAccountsOption(VerifyAccountsOption.java:201)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheCurrentAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:11 IST" name="logOutFromApplication" finished-at="2023-03-29T09:23:11 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:11 IST" name="launchWebApplication" finished-at="2023-03-29T09:23:25 IST" duration-ms="14846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption()[pri:12, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:25 IST" name="verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:23:26 IST" duration-ms="732" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/],
-expected [https://digitalaccount.axisdirect.in/register] but found [about:blank]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/],
-expected [https://digitalaccount.axisdirect.in/register] but found [about:blank]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption(VerifyAccountsOption.java:236)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:26 IST" name="logOutFromApplication" finished-at="2023-03-29T09:23:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:26 IST" name="launchWebApplication" finished-at="2023-03-29T09:23:40 IST" duration-ms="14200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheAxisActiveOptionPresentInAccountsOption()[pri:13, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:40 IST" name="verifyTheAxisActiveOptionPresentInAccountsOption" finished-at="2023-03-29T09:23:48 IST" duration-ms="7290" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/],
-expected [https://digitalaccount.axisdirect.in/register] but found [about:blank],
-expected [https://www.axisbank.com/axisactive/index] but found [https://www.axisbank.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.axisbank.com/retail/accounts/savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/silver-linings-program?cta=homepage-main-menu-silver-linings-program] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/trust-ngo-institutional-savings-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/pension-disbursement-account] but found [https://www.axisbank.com/],
-expected [https://www.axisbank.com/retail/accounts/safe-custody] but found [https://www.axisbank.com/],
-expected [https://digitalaccount.axisdirect.in/register] but found [about:blank],
-expected [https://www.axisbank.com/axisactive/index] but found [https://www.axisbank.com/]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheAxisActiveOptionPresentInAccountsOption(VerifyAccountsOption.java:298)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheAxisActiveOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="clearObject()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:48 IST" name="clearObject" finished-at="2023-03-29T09:23:48 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearObject -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:48 IST" name="logOutFromApplication" finished-at="2023-03-29T09:23:48 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@209da20d]" started-at="2023-03-29T09:23:48 IST" name="closedTheBrowser" finished-at="2023-03-29T09:23:51 IST" duration-ms="2885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedTheBrowser -->
-      </class> <!-- Explore_Products_Tab.VerifyAccountsOption -->
-      <class name="Explore_Products_Tab.VerifyDepositsOption">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:19:13 IST" name="openBrowser" finished-at="2023-03-29T09:19:23 IST" duration-ms="10233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:19:31 IST" name="createPomObject" finished-at="2023-03-29T09:19:31 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPomObject -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:19:31 IST" name="launchApplication" finished-at="2023-03-29T09:20:05 IST" duration-ms="34012" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyAllTheOptionPresentInDepositsOption()[pri:1, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:20:05 IST" name="verifyAllTheOptionPresentInDepositsOption" finished-at="2023-03-29T09:20:07 IST" duration-ms="1463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllTheOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:20:07 IST" name="logOutFromApplication" finished-at="2023-03-29T09:20:07 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:20:07 IST" name="launchApplication" finished-at="2023-03-29T09:20:48 IST" duration-ms="40709" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheDigitalFixedDepositOptionPresentInDepositsOption()[pri:2, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:20:48 IST" name="verifyTheDigitalFixedDepositOptionPresentInDepositsOption" finished-at="2023-03-29T09:20:54 IST" duration-ms="6639" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheDigitalFixedDepositOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:20:54 IST" name="logOutFromApplication" finished-at="2023-03-29T09:20:54 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:20:54 IST" name="launchApplication" finished-at="2023-03-29T09:21:12 IST" duration-ms="17881" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheFixedDepositsOptionPresentInDepositsOption()[pri:3, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:12 IST" name="verifyTheFixedDepositsOptionPresentInDepositsOption" finished-at="2023-03-29T09:21:16 IST" duration-ms="4309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheFixedDepositsOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:16 IST" name="launchApplication" finished-at="2023-03-29T09:21:23 IST" duration-ms="7072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:16 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyTheRecurringDepositsOptionPresentInDepositsOption()[pri:4, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:23 IST" name="verifyTheRecurringDepositsOptionPresentInDepositsOption" finished-at="2023-03-29T09:21:29 IST" duration-ms="5809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheRecurringDepositsOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:29 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:29 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:29 IST" name="launchApplication" finished-at="2023-03-29T09:21:36 IST" duration-ms="6398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheTaxSaverFixedDepositOptionPresentInDepositsOption()[pri:5, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:36 IST" name="verifyTheTaxSaverFixedDepositOptionPresentInDepositsOption" finished-at="2023-03-29T09:21:41 IST" duration-ms="5610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheTaxSaverFixedDepositOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:41 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:41 IST" name="launchApplication" finished-at="2023-03-29T09:21:46 IST" duration-ms="4950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheFixedDepositPlusOptionPresentInDepositsOption()[pri:6, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:46 IST" name="verifyTheFixedDepositPlusOptionPresentInDepositsOption" finished-at="2023-03-29T09:21:55 IST" duration-ms="9102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheFixedDepositPlusOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:55 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:55 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:21:55 IST" name="launchApplication" finished-at="2023-03-29T09:22:12 IST" duration-ms="17023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheAutoFixedDepositOptionPresentInDepositsOption()[pri:7, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:22:12 IST" name="verifyTheAutoFixedDepositOptionPresentInDepositsOption" finished-at="2023-03-29T09:22:16 IST" duration-ms="4100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheAutoFixedDepositOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="clearObject()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:22:16 IST" name="clearObject" finished-at="2023-03-29T09:22:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearObject -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:22:16 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@e15b7e8]" started-at="2023-03-29T09:23:51 IST" name="closedTheBrowser" finished-at="2023-03-29T09:23:53 IST" duration-ms="2470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedTheBrowser -->
-      </class> <!-- Explore_Products_Tab.VerifyDepositsOption -->
-      <class name="Home_Page.VerifyExploreProductTab">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:19:23 IST" name="openBrowser" finished-at="2023-03-29T09:19:31 IST" duration-ms="8297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:19:31 IST" name="createPomObject" finished-at="2023-03-29T09:19:31 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPomObject -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:19:31 IST" name="launchWebApplication" finished-at="2023-03-29T09:20:04 IST" duration-ms="32427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyAllTheOptionsPresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:20:04 IST" name="verifyAllTheOptionsPresentInExploreProductTab" finished-at="2023-03-29T09:20:19 IST" duration-ms="14960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllTheOptionsPresentInExploreProductTab -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:20:19 IST" name="logOutFromApplication" finished-at="2023-03-29T09:20:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:20:19 IST" name="launchWebApplication" finished-at="2023-03-29T09:20:44 IST" duration-ms="25359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheTableNamePresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:20:44 IST" name="verifyTheTableNamePresentInExploreProductTab" finished-at="2023-03-29T09:20:44 IST" duration-ms="163" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [Retail] but found [],
-expected [Agri and Rural] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Retail] but found [],
-expected [Agri and Rural] but found []
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Home_Page.VerifyExploreProductTab.verifyTheTableNamePresentInExploreProductTab(VerifyExploreProductTab.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheTableNamePresentInExploreProductTab -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:20:44 IST" name="logOutFromApplication" finished-at="2023-03-29T09:20:44 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:20:44 IST" name="clearObject" finished-at="2023-03-29T09:20:44 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearObject -->
-        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyExploreProductTab@bae7dc0]" started-at="2023-03-29T09:23:53 IST" name="closedTheBrowser" finished-at="2023-03-29T09:23:55 IST" duration-ms="1619" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedTheBrowser -->
-      </class> <!-- Home_Page.VerifyExploreProductTab -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2023-03-29T09:19:00 IST" name="ChromeTest" finished-at="2023-03-29T09:34:58 IST" duration-ms="957827">
-      <class name="Explore_Products_Tab.VerifyAccountsOption">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:19:00 IST" name="openBrowser" finished-at="2023-03-29T09:19:08 IST" duration-ms="7760" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:19:11 IST" name="createPomObject" finished-at="2023-03-29T09:19:11 IST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPomObject -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:19:11 IST" name="launchWebApplication" finished-at="2023-03-29T09:19:23 IST" duration-ms="11602" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyAllTheOptionsPresentInAccountsOption()[pri:1, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:19:23 IST" name="verifyAllTheOptionsPresentInAccountsOption" finished-at="2023-03-29T09:19:26 IST" duration-ms="3406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllTheOptionsPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:19:26 IST" name="logOutFromApplication" finished-at="2023-03-29T09:19:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:19:26 IST" name="launchWebApplication" finished-at="2023-03-29T09:19:48 IST" duration-ms="21997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheSavingAccountOptionPresentInAccountsOption()[pri:2, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:19:48 IST" name="verifyTheSavingAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:22:01 IST" duration-ms="133015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSavingAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:01 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:01 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:01 IST" name="launchWebApplication" finished-at="2023-03-29T09:22:12 IST" duration-ms="11399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheSilverLiningsProgramOptionPresentInAccountsOption()[pri:3, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:12 IST" name="verifyTheSilverLiningsProgramOptionPresentInAccountsOption" finished-at="2023-03-29T09:22:21 IST" duration-ms="8408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSilverLiningsProgramOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:21 IST" name="launchWebApplication" finished-at="2023-03-29T09:22:30 IST" duration-ms="9045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:21 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:21 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyTheSalaryAccountOptionPresentInAccountsOption()[pri:4, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:30 IST" name="verifyTheSalaryAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:22:37 IST" duration-ms="6681" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSalaryAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:37 IST" name="launchWebApplication" finished-at="2023-03-29T09:22:43 IST" duration-ms="6414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:37 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption()[pri:5, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:43 IST" name="verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:22:49 IST" duration-ms="5863" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheTrustNgoSavingsAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:49 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:22:49 IST" name="launchWebApplication" finished-at="2023-03-29T09:23:06 IST" duration-ms="17296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyThePensionDisbursementAccountOptionPresentInAccountsOption()[pri:6, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:23:06 IST" name="verifyThePensionDisbursementAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:25:12 IST" duration-ms="125601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThePensionDisbursementAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:25:12 IST" name="logOutFromApplication" finished-at="2023-03-29T09:25:12 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:25:12 IST" name="launchWebApplication" finished-at="2023-03-29T09:25:26 IST" duration-ms="14390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyThePublicProvidentFundOptionPresentInAccountsOption()[pri:7, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:25:26 IST" name="verifyThePublicProvidentFundOptionPresentInAccountsOption" finished-at="2023-03-29T09:27:11 IST" duration-ms="105302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThePublicProvidentFundOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:27:11 IST" name="launchWebApplication" finished-at="2023-03-29T09:27:25 IST" duration-ms="13836" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:27:11 IST" name="logOutFromApplication" finished-at="2023-03-29T09:27:11 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyThePMJDYOptionPresentInAccountsOption()[pri:8, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:27:25 IST" name="verifyThePMJDYOptionPresentInAccountsOption" finished-at="2023-03-29T09:27:28 IST" duration-ms="3131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThePMJDYOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:27:28 IST" name="launchWebApplication" finished-at="2023-03-29T09:27:42 IST" duration-ms="14038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:27:28 IST" name="logOutFromApplication" finished-at="2023-03-29T09:27:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyTheSafeDepositLockerOptionPresentInAccountsOption()[pri:9, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:27:42 IST" name="verifyTheSafeDepositLockerOptionPresentInAccountsOption" finished-at="2023-03-29T09:28:00 IST" duration-ms="17401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSafeDepositLockerOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:28:00 IST" name="logOutFromApplication" finished-at="2023-03-29T09:28:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:28:00 IST" name="launchWebApplication" finished-at="2023-03-29T09:28:39 IST" duration-ms="39227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheSafeCustodyOptionPresentInAccountsOption()[pri:10, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:28:39 IST" name="verifyTheSafeCustodyOptionPresentInAccountsOption" finished-at="2023-03-29T09:28:42 IST" duration-ms="2991" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheSafeCustodyOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:28:42 IST" name="logOutFromApplication" finished-at="2023-03-29T09:28:42 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:28:42 IST" name="launchWebApplication" finished-at="2023-03-29T09:29:07 IST" duration-ms="25109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheCurrentAccountOptionPresentInAccountsOption()[pri:11, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:29:07 IST" name="verifyTheCurrentAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:29:12 IST" duration-ms="4956" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheCurrentAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:29:12 IST" name="logOutFromApplication" finished-at="2023-03-29T09:29:12 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:29:12 IST" name="launchWebApplication" finished-at="2023-03-29T09:29:26 IST" duration-ms="13461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption()[pri:12, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:29:26 IST" name="verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption" finished-at="2023-03-29T09:29:40 IST" duration-ms="14114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheAxisDirectInvestAccountOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:29:40 IST" name="logOutFromApplication" finished-at="2023-03-29T09:29:40 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:29:40 IST" name="launchWebApplication" finished-at="2023-03-29T09:29:54 IST" duration-ms="14562" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheAxisActiveOptionPresentInAccountsOption()[pri:13, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:29:54 IST" name="verifyTheAxisActiveOptionPresentInAccountsOption" finished-at="2023-03-29T09:34:55 IST" duration-ms="300668" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=111.0.5563.111)
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Akash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81d507a5e3134843044eca275798903d]]>
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=111.0.5563.111)
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Akash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81d507a5e3134843044eca275798903d
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Explore_Products_Tab.AccountsOption.clickOnAxisActive(AccountsOption.java:105)
-at Explore_Products_Tab.VerifyAccountsOption.verifyTheAxisActiveOptionPresentInAccountsOption(VerifyAccountsOption.java:290)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at Browser_Setup.Base.openEdgeBrowser(Base.java:26)
+at Home_Page.VerifyExploreProductTab.openBrowser(VerifyExploreProductTab.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheAxisActiveOptionPresentInAccountsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:34:55 IST" name="logOutFromApplication" finished-at="2023-03-29T09:34:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyAllTheOptionsPresentInLoginTab -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyLoginTab@729d991e]" started-at="2023-04-16T10:52:07 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527370" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearObject()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:34:55 IST" name="clearObject" finished-at="2023-03-29T09:34:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyLoginTab@729d991e]" started-at="2023-04-16T10:52:07 IST" name="clearObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527385" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObject -->
-        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Explore_Products_Tab.VerifyAccountsOption@57d7f8ca]" started-at="2023-03-29T09:34:55 IST" name="closedTheBrowser" finished-at="2023-03-29T09:34:57 IST" duration-ms="1954" status="PASS">
+        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyLoginTab@729d991e]" started-at="2023-04-16T10:52:07 IST" name="closedTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527535" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedTheBrowser -->
-      </class> <!-- Explore_Products_Tab.VerifyAccountsOption -->
-      <class name="Explore_Products_Tab.VerifyDepositsOption">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:19:08 IST" name="openBrowser" finished-at="2023-03-29T09:19:09 IST" duration-ms="1696" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:19:11 IST" name="createPomObject" finished-at="2023-03-29T09:19:11 IST" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPomObject -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:19:11 IST" name="launchApplication" finished-at="2023-03-29T09:19:23 IST" duration-ms="11586" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyAllTheOptionPresentInDepositsOption()[pri:1, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:19:23 IST" name="verifyAllTheOptionPresentInDepositsOption" finished-at="2023-03-29T09:19:25 IST" duration-ms="2023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllTheOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:19:25 IST" name="logOutFromApplication" finished-at="2023-03-29T09:19:25 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:19:25 IST" name="launchApplication" finished-at="2023-03-29T09:19:55 IST" duration-ms="30228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheDigitalFixedDepositOptionPresentInDepositsOption()[pri:2, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:19:55 IST" name="verifyTheDigitalFixedDepositOptionPresentInDepositsOption" finished-at="2023-03-29T09:21:43 IST" duration-ms="108210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheDigitalFixedDepositOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:21:43 IST" name="launchApplication" finished-at="2023-03-29T09:21:53 IST" duration-ms="10448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:21:43 IST" name="logOutFromApplication" finished-at="2023-03-29T09:21:43 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method signature="verifyTheFixedDepositsOptionPresentInDepositsOption()[pri:3, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:21:53 IST" name="verifyTheFixedDepositsOptionPresentInDepositsOption" finished-at="2023-03-29T09:22:05 IST" duration-ms="11912" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheFixedDepositsOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:05 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:05 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:05 IST" name="launchApplication" finished-at="2023-03-29T09:22:18 IST" duration-ms="12954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheRecurringDepositsOptionPresentInDepositsOption()[pri:4, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:18 IST" name="verifyTheRecurringDepositsOptionPresentInDepositsOption" finished-at="2023-03-29T09:22:23 IST" duration-ms="4979" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheRecurringDepositsOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:23 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:23 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:23 IST" name="launchApplication" finished-at="2023-03-29T09:22:31 IST" duration-ms="7439" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheTaxSaverFixedDepositOptionPresentInDepositsOption()[pri:5, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:31 IST" name="verifyTheTaxSaverFixedDepositOptionPresentInDepositsOption" finished-at="2023-03-29T09:22:37 IST" duration-ms="5937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheTaxSaverFixedDepositOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:37 IST" name="logOutFromApplication" finished-at="2023-03-29T09:22:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:37 IST" name="launchApplication" finished-at="2023-03-29T09:22:55 IST" duration-ms="18288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheFixedDepositPlusOptionPresentInDepositsOption()[pri:6, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:22:55 IST" name="verifyTheFixedDepositPlusOptionPresentInDepositsOption" finished-at="2023-03-29T09:23:00 IST" duration-ms="5375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheFixedDepositPlusOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:23:00 IST" name="logOutFromApplication" finished-at="2023-03-29T09:23:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:23:00 IST" name="launchApplication" finished-at="2023-03-29T09:23:16 IST" duration-ms="15404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyTheAutoFixedDepositOptionPresentInDepositsOption()[pri:7, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:23:16 IST" name="verifyTheAutoFixedDepositOptionPresentInDepositsOption" finished-at="2023-03-29T09:23:20 IST" duration-ms="4271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheAutoFixedDepositOptionPresentInDepositsOption -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:23:20 IST" name="logOutFromApplication" finished-at="2023-03-29T09:23:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearObject()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:23:20 IST" name="clearObject" finished-at="2023-03-29T09:23:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearObject -->
-        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Explore_Products_Tab.VerifyDepositsOption@76c3e77a]" started-at="2023-03-29T09:34:57 IST" name="closedTheBrowser" finished-at="2023-03-29T09:34:57 IST" duration-ms="382" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedTheBrowser -->
-      </class> <!-- Explore_Products_Tab.VerifyDepositsOption -->
+      </class> <!-- Home_Page.VerifyLoginTab -->
       <class name="Home_Page.VerifyExploreProductTab">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:09 IST" name="openBrowser" finished-at="2023-03-29T09:19:11 IST" duration-ms="1318" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:02 IST" name="openBrowser" finished-at="2023-04-16T10:52:07 IST" duration-ms="5141" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at Browser_Setup.Base.openEdgeBrowser(Base.java:26)
+at Home_Page.VerifyExploreProductTab.openBrowser(VerifyExploreProductTab.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:11 IST" name="createPomObject" finished-at="2023-03-29T09:19:11 IST" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="createPomObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527343" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPomObject -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:11 IST" name="launchWebApplication" finished-at="2023-03-29T09:19:23 IST" duration-ms="11562" status="PASS">
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="launchWebApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527449" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyAllTheOptionsPresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:23 IST" name="verifyAllTheOptionsPresentInExploreProductTab" finished-at="2023-03-29T09:19:44 IST" duration-ms="21911" status="PASS">
+        <test-method signature="verifyAllTheOptionsPresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="verifyAllTheOptionsPresentInExploreProductTab" finished-at="2023-04-16T10:52:07 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at Browser_Setup.Base.openEdgeBrowser(Base.java:26)
+at Home_Page.VerifyExploreProductTab.openBrowser(VerifyExploreProductTab.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllTheOptionsPresentInExploreProductTab -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:44 IST" name="logOutFromApplication" finished-at="2023-03-29T09:19:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527488" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:44 IST" name="launchWebApplication" finished-at="2023-03-29T09:19:58 IST" duration-ms="13598" status="PASS">
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="launchWebApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527492" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebApplication -->
-        <test-method signature="verifyTheTableNamePresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:58 IST" name="verifyTheTableNamePresentInExploreProductTab" finished-at="2023-03-29T09:19:59 IST" duration-ms="689" status="FAIL">
+        <test-method signature="verifyTheTableNamePresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="verifyTheTableNamePresentInExploreProductTab" finished-at="2023-04-16T10:52:07 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FTIU28S', ip: '192.168.184.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA98A5B2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA922852+747634]
+(No symbol) [0x00007FF7BA5BDD2E]
+(No symbol) [0x00007FF7BA5A7C01]
+(No symbol) [0x00007FF7BA5A9001]
+(No symbol) [0x00007FF7BA5A8F30]
+(No symbol) [0x00007FF7BA596202]
+(No symbol) [0x00007FF7BA595D7A]
+(No symbol) [0x00007FF7BA627316]
+(No symbol) [0x00007FF7BA61F1C3]
+(No symbol) [0x00007FF7BA5F17D6]
+(No symbol) [0x00007FF7BA5F09B5]
+(No symbol) [0x00007FF7BA5F1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7BA835520+147088]
+(No symbol) [0x00007FF7BA6D91B6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA874487+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA877F55+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7BAB69923+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA92AE0C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA930334+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA93048C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7BA938591+837041]
+BaseThreadInitThunk [0x00007FFA06BD269D+29]
+RtlUserThreadStart [0x00007FFA07FEA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at Browser_Setup.Base.openEdgeBrowser(Base.java:26)
+at Home_Page.VerifyExploreProductTab.openBrowser(VerifyExploreProductTab.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheTableNamePresentInExploreProductTab -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527503" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="clearObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527527" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyExploreProductTab@32502377]" started-at="2023-04-16T10:52:07 IST" name="closedTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681622527532" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedTheBrowser -->
+      </class> <!-- Home_Page.VerifyExploreProductTab -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2023-04-16T10:52:02 IST" name="FirefoxTest" finished-at="2023-04-16T10:52:31 IST" duration-ms="28885">
+      <class name="Home_Page.VerifyLoginTab">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af]" started-at="2023-04-16T10:52:09 IST" name="openBrowser" finished-at="2023-04-16T10:52:14 IST" duration-ms="5205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af]" started-at="2023-04-16T10:52:14 IST" name="createPomObject" finished-at="2023-04-16T10:52:14 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af]" started-at="2023-04-16T10:52:14 IST" name="launchWebApplication" finished-at="2023-04-16T10:52:20 IST" duration-ms="5661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="verifyAllTheOptionsPresentInLoginTab()[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af]" started-at="2023-04-16T10:52:20 IST" name="verifyAllTheOptionsPresentInLoginTab" finished-at="2023-04-16T10:52:21 IST" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTheOptionsPresentInLoginTab -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af]" started-at="2023-04-16T10:52:21 IST" name="clearObject" finished-at="2023-04-16T10:52:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af]" started-at="2023-04-16T10:52:21 IST" name="logOutFromApplication" finished-at="2023-04-16T10:52:21 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllTheOptionsPresentInLoginTab status=SUCCESS method=VerifyLoginTab.verifyAllTheOptionsPresentInLoginTab()[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyLoginTab@ffaa6af]" started-at="2023-04-16T10:52:28 IST" name="closedTheBrowser" finished-at="2023-04-16T10:52:31 IST" duration-ms="2572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedTheBrowser -->
+      </class> <!-- Home_Page.VerifyLoginTab -->
+      <class name="Home_Page.VerifyExploreProductTab">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:02 IST" name="openBrowser" finished-at="2023-04-16T10:52:09 IST" duration-ms="7470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:14 IST" name="createPomObject" finished-at="2023-04-16T10:52:14 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:14 IST" name="launchWebApplication" finished-at="2023-04-16T10:52:20 IST" duration-ms="5993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="verifyAllTheOptionsPresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:20 IST" name="verifyAllTheOptionsPresentInExploreProductTab" finished-at="2023-04-16T10:52:21 IST" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTheOptionsPresentInExploreProductTab -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:21 IST" name="logOutFromApplication" finished-at="2023-04-16T10:52:21 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllTheOptionsPresentInExploreProductTab status=SUCCESS method=VerifyExploreProductTab.verifyAllTheOptionsPresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:21 IST" name="launchWebApplication" finished-at="2023-04-16T10:52:23 IST" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="verifyTheTableNamePresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:23 IST" name="verifyTheTableNamePresentInExploreProductTab" finished-at="2023-04-16T10:52:24 IST" duration-ms="332" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -1187,7 +655,7 @@ expected [Retail] but found [],
 expected [Agri and Rural] but found []
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Home_Page.VerifyExploreProductTab.verifyTheTableNamePresentInExploreProductTab(VerifyExploreProductTab.java:83)
+at Home_Page.VerifyExploreProductTab.verifyTheTableNamePresentInExploreProductTab(VerifyExploreProductTab.java:101)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1209,15 +677,162 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheTableNamePresentInExploreProductTab -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:59 IST" name="logOutFromApplication" finished-at="2023-03-29T09:19:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:24 IST" name="logOutFromApplication" finished-at="2023-04-16T10:52:25 IST" duration-ms="1455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheTableNamePresentInExploreProductTab status=FAILURE method=VerifyExploreProductTab.verifyTheTableNamePresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:19:59 IST" name="clearObject" finished-at="2023-03-29T09:19:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:25 IST" name="clearObject" finished-at="2023-04-16T10:52:25 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObject -->
-        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyExploreProductTab@4a7f959b]" started-at="2023-03-29T09:34:57 IST" name="closedTheBrowser" finished-at="2023-03-29T09:34:58 IST" duration-ms="517" status="PASS">
+        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyExploreProductTab@53ce1329]" started-at="2023-04-16T10:52:25 IST" name="closedTheBrowser" finished-at="2023-04-16T10:52:28 IST" duration-ms="2927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedTheBrowser -->
+      </class> <!-- Home_Page.VerifyExploreProductTab -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2023-04-16T10:52:02 IST" name="ChromeTest" finished-at="2023-04-16T10:52:32 IST" duration-ms="30118">
+      <class name="Home_Page.VerifyLoginTab">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e]" started-at="2023-04-16T10:52:03 IST" name="openBrowser" finished-at="2023-04-16T10:52:05 IST" duration-ms="1244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e]" started-at="2023-04-16T10:52:05 IST" name="createPomObject" finished-at="2023-04-16T10:52:05 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e]" started-at="2023-04-16T10:52:05 IST" name="launchWebApplication" finished-at="2023-04-16T10:52:11 IST" duration-ms="6138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="verifyAllTheOptionsPresentInLoginTab()[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e]" started-at="2023-04-16T10:52:11 IST" name="verifyAllTheOptionsPresentInLoginTab" finished-at="2023-04-16T10:52:12 IST" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTheOptionsPresentInLoginTab -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e]" started-at="2023-04-16T10:52:12 IST" name="logOutFromApplication" finished-at="2023-04-16T10:52:12 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllTheOptionsPresentInLoginTab status=SUCCESS method=VerifyLoginTab.verifyAllTheOptionsPresentInLoginTab()[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e]" started-at="2023-04-16T10:52:12 IST" name="clearObject" finished-at="2023-04-16T10:52:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyLoginTab@5562c41e]" started-at="2023-04-16T10:52:31 IST" name="closedTheBrowser" finished-at="2023-04-16T10:52:32 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedTheBrowser -->
+      </class> <!-- Home_Page.VerifyLoginTab -->
+      <class name="Home_Page.VerifyExploreProductTab">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:02 IST" name="openBrowser" finished-at="2023-04-16T10:52:03 IST" duration-ms="1775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPomObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:05 IST" name="createPomObject" finished-at="2023-04-16T10:52:05 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObject -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:05 IST" name="launchWebApplication" finished-at="2023-04-16T10:52:12 IST" duration-ms="6864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="verifyAllTheOptionsPresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:12 IST" name="verifyAllTheOptionsPresentInExploreProductTab" finished-at="2023-04-16T10:52:25 IST" duration-ms="13128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTheOptionsPresentInExploreProductTab -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:25 IST" name="launchWebApplication" finished-at="2023-04-16T10:52:29 IST" duration-ms="4418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:25 IST" name="logOutFromApplication" finished-at="2023-04-16T10:52:25 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllTheOptionsPresentInExploreProductTab status=SUCCESS method=VerifyExploreProductTab.verifyAllTheOptionsPresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method signature="verifyTheTableNamePresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:29 IST" name="verifyTheTableNamePresentInExploreProductTab" finished-at="2023-04-16T10:52:29 IST" duration-ms="225" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Retail] but found [],
+expected [Agri and Rural] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Retail] but found [],
+expected [Agri and Rural] but found []
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at Home_Page.VerifyExploreProductTab.verifyTheTableNamePresentInExploreProductTab(VerifyExploreProductTab.java:101)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheTableNamePresentInExploreProductTab -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:29 IST" name="logOutFromApplication" finished-at="2023-04-16T10:52:31 IST" duration-ms="1676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheTableNamePresentInExploreProductTab status=FAILURE method=VerifyExploreProductTab.verifyTheTableNamePresentInExploreProductTab()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:31 IST" name="clearObject" finished-at="2023-04-16T10:52:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+        <test-method is-config="true" signature="closedTheBrowser()[pri:0, instance:Home_Page.VerifyExploreProductTab@6da21078]" started-at="2023-04-16T10:52:31 IST" name="closedTheBrowser" finished-at="2023-04-16T10:52:31 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedTheBrowser -->

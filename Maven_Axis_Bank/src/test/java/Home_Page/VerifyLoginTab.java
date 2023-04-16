@@ -4,14 +4,18 @@ import org.testng.annotations.Test;
 
 import Browser_Setup.Base;
 import Log_In_Function.LogInTab;
+import Utils.Utility;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -21,6 +25,7 @@ public class VerifyLoginTab extends Base {
 	
 	WebDriver driver;
 	LogInTab loginTab;
+	String testId ;
 	
 	
 	@Parameters ("browser")
@@ -63,6 +68,7 @@ public class VerifyLoginTab extends Base {
 	
 	@Test
 	public void verifyAllTheOptionsPresentInLoginTab() {
+		testId = "Test401";
 		System.out.println("VerifyLoginTab.Test 1");
 		loginTab.openLoginTab();
 		System.out.println(loginTab.getTextOfInternetBanking());
@@ -76,8 +82,13 @@ public class VerifyLoginTab extends Base {
 	
 	
 	@AfterMethod
-	public void logOutFromApplication() {
+	public void logOutFromApplication(ITestResult result) throws WebDriverException, IOException, InterruptedException {
 		System.out.println("VerifyLoginTab.Afetr Method");
+		
+		if(ITestResult.FAILURE == result.getStatus())
+		{
+			Utility.captureScreen(driver, testId);
+		}
 	}
 	
 	

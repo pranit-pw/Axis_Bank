@@ -1,8 +1,11 @@
 package Home_Page;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -13,9 +16,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import Browser_Setup.Base;
 import Log_In_Function.LogInTab;
 import Personal_Tabs.ExploreProductTab;
+import Utils.Utility;
 
 public class VerifyExploreProductTab extends Base {
 	
@@ -23,11 +31,20 @@ public class VerifyExploreProductTab extends Base {
 	ExploreProductTab exploreProductTab;
 	LogInTab loginTab;
 	SoftAssert soft;
+	String testId ;
+	
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
 	
 	
 	@Parameters ("browser")
 	@BeforeTest
 	public void openBrowser(String browserName ) {
+		
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+    	ExtentReports extend = new ExtentReports();
+    	extend.attachReporter(reporter);
+    	
 		System.out.println("VerifyExploreProductTab.Before Test");
     	if(browserName.equals("Chrome"))
     	{
@@ -69,6 +86,7 @@ public class VerifyExploreProductTab extends Base {
 	
 	@Test
 	public void verifyTheTableNamePresentInExploreProductTab() {
+		testId = "Test301";
 		System.out.println("VerifyExploreProductTab.Test 1");
 		String actualTableName = exploreProductTab.getTextOfRetailTable();
 		String expectedTableName = "Retail";
@@ -85,6 +103,7 @@ public class VerifyExploreProductTab extends Base {
 	
 	@Test
 	public void verifyAllTheOptionsPresentInExploreProductTab() {
+		testId = "Test302";
 		System.out.println("VerifyExploreProductTab.Test 2");
 		loginTab.clickOnClosedAdsButton();
 		exploreProductTab.goToExploreProductTab();
@@ -140,8 +159,13 @@ public class VerifyExploreProductTab extends Base {
 	
 	
 	@AfterMethod
-	public void logOutFromApplication() {
+	public void logOutFromApplication(ITestResult result) throws IOException, InterruptedException {
 		System.out.println("VerifyExploreProductTab.After Method");
+		
+		if(ITestResult.FAILURE == result.getStatus())
+		{
+			Utility.captureScreen(driver, testId);
+		}
 	}
 	
 	@AfterClass
