@@ -60,7 +60,7 @@ public class LogInTab {
 	public LogInTab (WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
-		action = new Actions(driver); 
+		action = new Actions(driver);
 	}
 	
 	
